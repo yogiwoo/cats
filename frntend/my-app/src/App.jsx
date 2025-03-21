@@ -12,7 +12,7 @@ function App() {
   // Fetch breed list
   async function getBreeds() {
     try {
-      const response = await axios.get('http://localhost:4006/getBreeds');
+      const response = await axios.get('https://cats-y04w.onrender.com/getBreeds');
       setBreeds(response.data.data);
     } catch (error) {
       console.error('Error  breeds:', error);
@@ -23,7 +23,7 @@ function App() {
     if (!breedId) return;
 
     try {
-      const res = await axios.get(`http://localhost:4006/getCat?limit=10&page=${page}&breedid=${breedId}`);
+      const res = await axios.get(`https://cats-y04w.onrender.com/getCat?limit=10&page=${page}&breedid=${breedId}`);
       setCats(res.data.data);
     } catch (err) {
       console.error('Error:', err);
