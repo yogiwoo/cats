@@ -55,7 +55,9 @@ function App() {
 
   return (
     <div style={{ padding: '40px' }}>
-      {/* Dropdown for Breeds */}
+      <div>
+        <h3>Please select a cat breed</h3>
+      </div>
       <div className="row">
         <div className="col-md-6">
           <div className="dropdown">
